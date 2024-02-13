@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Be My Valentine?</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .hidden {
+      display: none;
+    }
+    .image-center {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1000;
+    }
+    /* Add any additional styling you need for your container, buttons, etc. */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://i.imgur.com/CZf4DkP.gif" alt="Valentine's Day GIF">
+    <h1>Would you like to be my Valentine?</h1>
+    <div class="buttons">
+      <button>Yes</button>
+      <button>No</button>
+    </div>
+  </div>
+  <!-- Add your chosen image here, initially hidden -->
+  <img id="chosenImage" src="https://i.pinimg.com/564x/88/f4/48/88f4489ad619e6af947d690e4225bc3b.jpg" alt="Chosen Image" class="hidden image-center">
+  <script>
+    const yesButton = document.querySelector('.buttons button:first-child'); // Select the first "Yes" button
+    const chosenImage = document.getElementById('chosenImage'); // Get the chosen image element
+  
+    yesButton.addEventListener('click', () => {
+      chosenImage.classList.remove('hidden'); // Remove the 'hidden' class to display the image
+    });
+  </script>
+</body>
+</html>

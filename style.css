@@ -1,0 +1,42 @@
+body {
+    margin: 0; /* Remove default margin for better centering */
+    font-family: sans-serif; /* Set a basic font */
+  }
+  
+  .container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center vertically within viewport */
+    align-items: center; /* Center horizontally within viewport */
+    width: 100vw; /* Stretch container to full width */
+    height: 100vh; /* Stretch container to full height */
+  }
+  
+  h1 {
+    font-size: 2em; /* Adjust heading size as needed */
+    margin-bottom: 20px; /* Add some space below the heading */
+  }
+  
+  .buttons {
+    display: flex; /* Center buttons horizontally within the container */
+    justify-content: space-around; /* Distribute buttons evenly within container */
+    justify-content: space-between; /* Change to space-between for even spacing */
+  }
+  
+  button {
+    padding: 10px 20px; /* Adjust button padding as needed */
+    border: 1px solid #e04ecd; /* Add a border */
+    border-radius: 5px; /* Round button corners */
+    cursor: pointer; /* Indicate clickable elements */
+    margin: 0 20px; /* Adds 10px margin on both sides */
+    padding: 20px 30px; /* Increase padding within each button */
+  }
+  
+  button:hover {
+    background-color: #f550d1; /* Change background color on hover */
+  }
+  body {
+    background-color: #f0e6ff; /* Light pinkish hex code */
+    /* or */
+    background-color: lightpink; /* Named color */
+  }
